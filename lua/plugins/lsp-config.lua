@@ -18,7 +18,7 @@ return {
           "ruff-lsp",
           "shfmt",
           "stylua",
-					"yamllint"
+					"yamlls"
         }
       })
     end
@@ -67,7 +67,7 @@ return {
       -- Shell
       lspconfig.bashls.setup({})
 			-- Yaml
-			lspconfig.yamllint.setup({})
+			lspconfig.yamlls.setup({})
 
 
 			-- Keymaps
