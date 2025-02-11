@@ -71,7 +71,11 @@ return {
 
 
 			-- Keymaps
+			vim.keymap.set('n','G', vim.lsp.buf.definition, {})
 			vim.keymap.set('n','K', vim.lsp.buf.hover, {})
+			vim.keymap.set('n','I', vim.lsp.buf.implementation, {})
+			vim.keymap.set('n','R', vim.lsp.buf.rename, {})
+			vim.keymap.set('n','C', vim.lsp.buf.code_action, {})
     end
   }
 }
