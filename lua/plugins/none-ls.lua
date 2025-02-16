@@ -20,6 +20,7 @@ return {
 				"ruff",
 				"golangci_lint",
 				"gofmt",
+				"isort",
 			},
 			-- auto-install configured formatters & linters (with null-ls)
 			automatic_installation = true,
@@ -32,6 +33,7 @@ return {
 			formatting.shfmt.with({ args = { "-i", "4" } }),
 			formatting.terraform_fmt,
 			formatting.gofmt,
+			formatting.isort,
 			require("none-ls.formatting.ruff").with({ extra_args = { "--extend-select", "I" } }),
 			require("none-ls.formatting.ruff_format"),
 		}

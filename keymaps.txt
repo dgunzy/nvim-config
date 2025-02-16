@@ -1,0 +1,70 @@
+Neovim Keymap Reference
+General
+
+Leader key: Space
+Local leader key: \
+
+LSP Keymaps
+
+G - Go to definition
+K - Show hover information
+I - Go to implementation
+R - Rename symbol
+C - Code action
+
+Telescope
+
+<leader>ff - Find files
+<leader>fg - Live grep (search in files)
+<leader>fb - Browse buffers
+<leader>fh - Search help tags
+<leader>gf - Find git files
+
+Neo-tree (File Explorer)
+
+<leader>n - Open/reveal Neo-tree file explorer on the left
+<leader>c - Close Neo-tree file explorer
+
+Completion (nvim-cmp)
+
+<S-Tab> - In insert mode:
+
+Select next item if completion menu is visible
+Open completion menu if not visible
+
+
+<CR> - Confirm selection
+
+Auto-formatting
+
+Auto-formats on save for supported file types (configured through null-ls)
+
+Includes support for:
+
+Prettier (HTML, JSON, YAML, Markdown)
+Stylua (Lua)
+shfmt (Shell scripts)
+gofmt (Go)
+isort (Python)
+ruff (Python)
+
+Comments (Comment.nvim)
+
+Default keybindings enabled (standard Comment.nvim mappings)
+
+gcc - Toggle line comment
+gbc - Toggle block comment
+gc - Toggle line comment (visual mode)
+gb - Toggle block comment (visual mode)
+
+
+Notes
+
+Many features like autopairs and treesitter work automatically without specific keymaps
+LSP features are automatically enabled for supported languages:
+
+lua_ls (Lua)
+pyright (Python)
+gopls (Go)
+yamlls (YAML)
+bashls (Shell)
