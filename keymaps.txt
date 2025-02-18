@@ -4,9 +4,14 @@ General
 Leader key: Space
 Local leader key: \
 
+Movement
+
+<C-k> - Move up half a page (centered)
+<C-j> - Move down half a page (centered)
+
 LSP Keymaps
 
-G - Go to definition
+D - Go to definition
 K - Show hover information
 I - Go to implementation
 R - Rename symbol
@@ -32,7 +37,6 @@ Completion (nvim-cmp)
 Select next item if completion menu is visible
 Open completion menu if not visible
 
-
 <CR> - Confirm selection
 
 Auto-formatting
@@ -57,7 +61,6 @@ gbc - Toggle block comment
 gc - Toggle line comment (visual mode)
 gb - Toggle block comment (visual mode)
 
-
 Notes
 
 Many features like autopairs and treesitter work automatically without specific keymaps
@@ -68,3 +71,48 @@ pyright (Python)
 gopls (Go)
 yamlls (YAML)
 bashls (Shell)
+
+Useful Vim Motions
+Text Objects
+
+ci" - Change inside quotes
+ca" - Change around quotes (including quotes)
+ci{ - Change inside curly braces
+cit - Change inside HTML/XML tags
+yi( - Yank inside parentheses
+va[ - Visually select around square brackets
+
+Paragraph and Section Movement
+
+{ - Jump to previous blank line
+} - Jump to next blank line
+% - Jump to matching bracket/parenthesis
+[[ - Jump to previous function/class definition
+]] - Jump to next function/class definition
+
+Quick Jumps
+
+f{char} - Jump forward to character on current line
+F{char} - Jump backward to character on current line
+t{char} - Jump forward to before character on current line
+T{char} - Jump backward to before character on current line
+; - Repeat last f, F, t, or T movement forward
+, - Repeat last f, F, t, or T movement backward
+
+Search and Mark
+
+* - Search forward for word under cursor
+# - Search backward for word under cursor
+m{a-z} - Set mark at current position
+'{a-z} - Jump to mark line
+`{a-z} - Jump to mark position
+
+Text Manipulation
+
+gU{motion} - Make motion uppercase
+gu{motion} - Make motion lowercase
+g~{motion} - Toggle case of motion
+>ip - Indent paragraph
+=ip - Auto-indent paragraph
+
+
