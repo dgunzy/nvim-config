@@ -116,3 +116,6 @@ g~{motion} - Toggle case of motion
 =ip - Auto-indent paragraph
 
 
+ - Item install resource
+
+https://www.josean.com/posts/terminal-setup
